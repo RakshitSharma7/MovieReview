@@ -14,7 +14,7 @@ const div_new = document.createElement('div');
 div_new.innerHTML = `
   <div class="row">
     <div class="column">
-      <div class="card">
+      <div class="card1">
           New Review
           <p><strong>Review: </strong>
             <input type="text" id="new_review" value="">
@@ -41,10 +41,10 @@ function returnReviews(url){
       div_card.innerHTML = `
           <div class="row">
             <div class="column">
-              <div class="card" id="${review._id}">
+              <div class="card1" id="${review._id}">
                 <p><strong>Review: </strong>${review.review}</p>
                 <p><strong>User: </strong>${review.user}</p>
-                <p><a href="#"onclick="editReview('${review._id}','${review.review}', '${review.user}')">✏️</a> <a href="#" onclick="deleteReview('${review._id}')">🗑</a></p>
+                <p><a href="#"onclick="editReview('${review._id}','${review.review}', '${review.user}')">✏️&nbsp; &nbsp; &nbsp; &nbsp; </a> <a href="#" onclick="deleteReview('${review._id}')">🗑</a></p>
               </div>
             </div>
           </div>
